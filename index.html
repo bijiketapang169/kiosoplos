@@ -1,0 +1,1930 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kios Cat Polos Warna 9 | Solusi Warna Anda</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --blue: #1755a4;
+    --blue-dark: #103d75;
+    --yellow: #ffc928;
+    --red: #d92735;
+    --dark: #192b42;
+    --gray: #687587;
+    --light: #f4f6f9;
+    --white: #fff;
+    --green: #20a967;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark);
+    background: white;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.35;
+}
+
+p {
+    text-align: justify;
+}
+
+.container {
+    width: 90%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+section {
+    padding: 85px 0;
+    scroll-margin-top: 78px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: clamp(25px, 3vw, 32px);
+    margin: 9px 0 12px;
+}
+
+.section-heading p {
+    color: var(--gray);
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ANIMASI */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* NAVIGASI */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.98);
+    border-bottom: 1px solid #e8e8e8;
+}
+
+header.scrolled {
+    box-shadow: 0 5px 20px rgba(0,0,0,.09);
+}
+
+.navbar {
+    min-height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--blue);
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.brand img {
+    width: 85px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+.nav-contact {
+    padding: 11px 17px;
+    background: var(--blue);
+    color: white !important;
+    border-radius: 5px;
+}
+
+.nav-contact:hover {
+    background: var(--yellow);
+    color: var(--dark) !important;
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--blue);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* BERANDA */
+
+.hero {
+    min-height: 590px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13,35,64,.94),
+            rgba(13,35,64,.68),
+            rgba(13,35,64,.28)
+        ),
+        url('assets/img/toko cat.jpeg') center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 90px 0;
+    position: relative;
+    z-index: 2;
+    animation: slideLeft 1s ease;
+}
+
+.hero-label {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5.5vw, 60px);
+    line-height: 1.2;
+    margin: 24px 0;
+}
+
+.hero h1 span {
+    color: var(--yellow);
+}
+
+.hero p {
+    max-width: 680px;
+    color: #e5eaf2;
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* PROFIL */
+
+.profile {
+    background: white;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.profile-image {
+    height: 450px;
+    overflow: hidden;
+    background: #f1f3f5;
+    border-radius: 8px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .7s;
+}
+
+.profile-image:hover img {
+    transform: scale(1.06);
+}
+
+.profile-text h3 {
+    font-size: 29px;
+    color: var(--blue);
+    margin: 15px 0;
+}
+
+.profile-text p {
+    color: var(--gray);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+    margin-top: 25px;
+}
+
+.detail-box {
+    background: #f4f6f8;
+    border-left: 4px solid var(--yellow);
+    padding: 16px;
+    font-size: 14px;
+}
+
+.detail-box strong {
+    display: block;
+    color: var(--blue);
+    margin-bottom: 4px;
+}
+
+/* SEJARAH */
+
+.history {
+    background: #f5f6f8;
+}
+
+.history-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+.history-content h3 {
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 23px;
+}
+
+.history-content p {
+    color: #536174;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.history-content p strong,
+.history-content p b {
+    font-weight: 400;
+}
+
+/* VISI MISI */
+
+.vision {
+    background: #f1f2f3;
+}
+
+.vm-wrapper {
+    max-width: 1050px;
+    margin: auto;
+}
+
+.vm-item {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 25px;
+    margin-bottom: 42px;
+}
+
+.vm-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-bottom: 3px solid var(--yellow);
+    font-size: 32px;
+    transition: .4s;
+}
+
+.vm-item:hover .vm-icon {
+    background: var(--yellow);
+    transform: rotate(-8deg);
+}
+
+.vm-item h3 {
+    color: #00a9d6;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.vm-item p,
+.mission-list li {
+    color: #596579;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.mission-list {
+    list-style: none;
+}
+
+/* ORGANISASI */
+
+.organization {
+    background: white;
+}
+
+.org-main {
+    width: 290px;
+    margin: auto;
+    padding: 23px;
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    transition: .4s;
+}
+
+.org-main:hover {
+    transform: translateY(-7px);
+    background: var(--blue-dark);
+}
+
+.org-icon {
+    font-size: 34px;
+}
+
+.org-main h3 {
+    margin: 8px 0;
+}
+
+.org-main small {
+    color: #e0eafa;
+}
+
+.org-connector {
+    height: 35px;
+    width: 2px;
+    background: var(--yellow);
+    margin: auto;
+}
+
+.org-horizontal {
+    width: 75%;
+    height: 2px;
+    background: var(--yellow);
+    margin: auto;
+}
+
+.org-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.org-card {
+    padding: 28px 22px;
+    text-align: center;
+    background: #f5f6f8;
+    border-bottom: 3px solid var(--yellow);
+    transition: .4s;
+}
+
+.org-card:hover {
+    transform: translateY(-9px);
+    background: #edf3fc;
+}
+
+.org-card h3 {
+    color: var(--blue);
+    font-size: 19px;
+    margin: 12px 0;
+}
+
+.org-card p {
+    color: var(--gray);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* KATALOG */
+
+.catalog {
+    background: #f5f6f8;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 38px;
+}
+
+.category-btn {
+    padding: 13px 28px;
+    background: white;
+    color: var(--dark);
+    border: 1px solid #dce2e9;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: var(--blue);
+    color: white;
+    border-color: var(--blue);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e6e8ed;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.product-card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 15px 30px rgba(23,85,164,.13);
+}
+
+/* GAMBAR PRODUK DIPERBESAR */
+
+.product-image {
+    height: 300px;
+    padding: 12px;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: .6s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+}
+
+.product-info {
+    padding: 23px;
+}
+
+.product-type {
+    font-size: 11px;
+    color: var(--blue);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.product-info h3 {
+    color: var(--blue);
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: var(--gray);
+    font-size: 14px;
+    min-height: 65px;
+}
+
+.detail-btn {
+    margin-top: 16px;
+    border: none;
+    background: none;
+    color: var(--blue);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.detail-btn:hover {
+    color: var(--red);
+}
+
+/* POPUP */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(10,20,35,.75);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.modal.show .modal-content {
+    animation: zoomIn .35s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    color: var(--blue);
+    margin: 12px 0;
+}
+
+.modal-content p {
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+
+.modal-content h4 {
+    color: var(--blue);
+    margin: 20px 0 10px;
+}
+
+.modal-content ul {
+    padding-left: 20px;
+    color: var(--gray);
+}
+
+/* LOKASI */
+
+.location {
+    background: white;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.location-info h3 {
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.location-info p {
+    color: var(--gray);
+    margin-bottom: 18px;
+}
+
+.address {
+    background: #f4f6f8;
+    border-left: 4px solid var(--yellow);
+    padding: 18px;
+    margin-bottom: 22px;
+}
+
+.address strong {
+    color: var(--blue);
+}
+
+.map-frame {
+    width: 100%;
+    height: 420px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.map-button {
+    display: inline-block;
+    padding: 13px 23px;
+    background: var(--blue);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.map-button:hover {
+    background: var(--blue-dark);
+    transform: translateY(-4px);
+}
+
+/* KONTAK */
+
+.contact {
+    background: linear-gradient(120deg, #103d75, #1755a4);
+    color: white;
+}
+
+.contact-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.contact p {
+    max-width: 650px;
+    color: #e0eafa;
+}
+
+.wa-button {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    text-decoration: none;
+    padding: 16px 25px;
+    font-weight: 800;
+    white-space: nowrap;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.wa-button:hover {
+    background: #168952;
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+
+footer {
+    background: #142238;
+    color: white;
+    padding: 48px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+.footer-grid h3 {
+    color: var(--yellow);
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.footer-grid p,
+.footer-grid a {
+    color: #bdc8d8;
+    font-size: 14px;
+}
+
+.footer-grid ul {
+    list-style: none;
+}
+
+.footer-grid li {
+    margin: 8px 0;
+}
+
+.footer-grid a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-grid a:hover {
+    color: var(--yellow);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #344155;
+    padding-top: 20px;
+    text-align: center;
+    color: #aab6c6;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1050px) {
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 850px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 20px 5%;
+        box-shadow: 0 10px 20px rgba(0,0,0,.08);
+    }
+
+    .nav-links.show {
+        display: flex;
+        animation: fadeDown .3s ease;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    .profile-grid,
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image {
+        height: 400px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .org-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .org-horizontal {
+        display: none;
+    }
+
+    .contact-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+}
+
+@media(max-width: 550px) {
+    .container {
+        width: 92%;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .brand {
+        font-size: 11px;
+    }
+
+    .brand img {
+        width: 65px;
+        height: 52px;
+    }
+
+    .hero {
+        min-height: 470px;
+    }
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .profile-image {
+        height: 290px;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vm-item {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+    }
+
+    .vm-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+    }
+
+    .vm-item p,
+    .mission-list li {
+        font-size: 14px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 320px;
+    }
+
+    .category-btn {
+        padding: 11px 18px;
+        font-size: 12px;
+    }
+
+    .org-main {
+        width: 85%;
+    }
+
+    .map-frame {
+        height: 300px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGASI -->
+
+<header id="header">
+    <div class="container navbar">
+
+        <a href="#beranda" class="brand">
+            <img src="assets/img/logo cat.jpeg" alt="Foto Toko Cat Polos Warna 9">
+            <span>KIOS CAT POLOS WARNA 9</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil UMKM</a></li>
+            <li><a href="#sejarah">Sejarah</a></li>
+            <li><a href="#visi-misi">Visi & Misi</a></li>
+            <li><a href="#manajemen">Manajemen</a></li>
+            <li><a href="#katalog">Katalog</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+            <li><a href="#kontak" class="nav-contact">Hubungi Kami</a></li>
+        </ul>
+
+    </div>
+</header>
+
+<!-- BERANDA -->
+
+<section class="hero" id="beranda">
+    <div class="container">
+        <div class="hero-content">
+
+            <span class="hero-label">
+                TOKO CAT DAN PERLENGKAPAN PENGECATAN
+            </span>
+
+            <h1>
+                Mewarnai Ruang,<br>
+                Menghidupkan <span>Inspirasi.</span>
+            </h1>
+
+            <p>
+                Selamat datang di Kios Cat Polos Warna 9.
+                Kami menyediakan berbagai kebutuhan pengecatan,
+                mulai dari cat tembok, cat besi, hingga perlengkapan
+                pengecatan untuk membantu mewujudkan warna terbaik
+                bagi setiap bangunan dan hunian Anda.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROFIL UMKM -->
+
+<section class="profile" id="profil">
+    <div class="container profile-grid reveal">
+
+        <div class="profile-image">
+            <img src="assets/img/toko cat.jpeg" alt="Foto Toko Cat Polos Warna 9">
+        </div>
+
+        <div class="profile-text">
+
+            <span class="hero-label"
+                  style="background:#eaf1fb;color:#1755a4;border:0;">
+                PROFIL UMKM
+            </span>
+
+            <h3>Kios Cat Polos Warna 9</h3>
+
+            <p>
+                Kios Cat Polos Warna 9 merupakan usaha mikro,
+                kecil, dan menengah (UMKM) yang bergerak dalam
+                bidang perdagangan cat dan perlengkapan
+                pengecatan. Kami hadir untuk memenuhi kebutuhan
+                masyarakat dalam memperoleh produk cat dan
+                perlengkapan pengecatan yang berkualitas.
+            </p>
+
+            <p>
+                Dengan menyediakan berbagai pilihan produk,
+                kami berupaya memberikan kemudahan kepada
+                pelanggan dalam memilih kebutuhan pengecatan
+                sesuai kebutuhan bangunan, hunian, maupun proyek.
+            </p>
+
+            <div class="detail-grid">
+
+                <div class="detail-box">
+                    <strong>Nama Usaha</strong>
+                    Kios Cat Polos Warna 9
+                </div>
+
+                <div class="detail-box">
+                    <strong>Bidang Usaha</strong>
+                    Perdagangan Cat
+                </div>
+
+                <div class="detail-box">
+                    <strong>Jenis Usaha</strong>
+                    UMKM
+                </div>
+
+                <div class="detail-box">
+                    <strong>Produk</strong>
+                    Cat dan Perlengkapan
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEJARAH -->
+
+<section class="history" id="sejarah">
+    <div class="container history-content reveal">
+
+        <div class="section-heading">
+            <span>PERJALANAN KAMI</span>
+            <h2>Sejarah dan Perkembangan UMKM</h2>
+            <p>Mewarnai Sudut Yogyakarta Sejak 1997</p>
+        </div>
+
+        <h3>Mewarnai Sudut Yogyakarta Sejak 1997</h3>
+
+        <p>
+            Berawal dari sebuah toko cat di koridor strategis
+            Jalan Ring Road Utara, Nanggulan, Maguwoharjo,
+            Depok, Sleman, perjalanan UMKM Toko Cat Propan /
+            Oplos 9 dimulai sejak tahun 1997. Selama hampir
+            tiga dekade, kami tumbuh bersama perkembangan
+            hunian dan infrastruktur di Daerah Istimewa
+            Yogyakarta sebagai mitra tepercaya untuk urusan
+            pengecatan bangunan.
+        </p>
+
+        <p>
+            Dari penyedia kebutuhan pengecatan dasar bagi warga
+            sekitar, kepercayaan pelanggan membawa kami berkembang
+            menjadi pusat solusi warna dan mitra produk Propan.
+            Didukung teknologi mesin tinting (cat oplos)
+            berpresisi tinggi, kami mampu meracik ribuan karakter
+            warna secara akurat, baik dari katalog resmi maupun
+            sampel fisik yang dibawa pelanggan.
+        </p>
+
+        <p>
+            Hingga hari ini, pengalaman panjang sejak akhir era
+            90-an menjadi fondasi komitmen kami: menghadirkan
+            cat tembok dan cat besi berkualitas, racikan warna
+            yang presisi, serta perlengkapan pengecatan lengkap
+            dalam satu atap.
+        </p>
+
+    </div>
+</section>
+
+<!-- VISI MISI -->
+
+<section class="vision" id="visi-misi">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span>ARAH DAN TUJUAN USAHA</span>
+            <h2>Visi dan Misi</h2>
+            <p>
+                Landasan dan komitmen Kios Cat Polos Warna 9
+                dalam memberikan pelayanan terbaik.
+            </p>
+        </div>
+
+        <div class="vm-wrapper">
+
+            <div class="vm-item reveal">
+                <div class="vm-icon">🎯</div>
+
+                <div>
+                    <h3>Visi</h3>
+                    <p>
+                        Menjadi toko cat yang terpercaya dan
+                        menjadi pilihan masyarakat dalam memenuhi
+                        kebutuhan cat serta perlengkapan pengecatan
+                        dengan mengutamakan kualitas produk dan
+                        pelayanan yang baik.
+                    </p>
+                </div>
+            </div>
+
+            <div class="vm-item reveal">
+                <div class="vm-icon">🎨</div>
+
+                <div>
+                    <h3>Misi</h3>
+
+                    <ul class="mission-list">
+                        <li>✓ Menyediakan berbagai pilihan produk cat sesuai kebutuhan pelanggan.</li>
+                        <li>✓ Menyediakan perlengkapan pengecatan yang lengkap dan berkualitas.</li>
+                        <li>✓ Memberikan pelayanan yang ramah, cepat, dan informatif kepada pelanggan.</li>
+                        <li>✓ Menjaga kepercayaan pelanggan melalui kualitas produk dan pelayanan.</li>
+                        <li>✓ Mengembangkan usaha secara berkelanjutan.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- STRUKTUR ORGANISASI -->
+
+<section class="organization" id="manajemen">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span>STRUKTUR ORGANISASI</span>
+            <h2>Manajemen dan Hierarki</h2>
+            <p>
+                Pembagian tanggung jawab dan tugas dalam
+                menjalankan kegiatan operasional Kios Cat
+                Polos Warna 9.
+            </p>
+        </div>
+
+        <div class="org-main reveal">
+            <div class="org-icon">👤</div>
+            <h3>OWNER</h3>
+            <small>Pemilik dan Penanggung Jawab Usaha</small>
+        </div>
+
+        <div class="org-connector"></div>
+        <div class="org-horizontal"></div>
+
+        <div class="org-grid">
+
+            <div class="org-card reveal">
+                <div class="org-icon">💳</div>
+                <h3>KASIR</h3>
+                <p>
+                    Bertanggung jawab melayani pembayaran,
+                    mencatat transaksi penjualan, dan
+                    mengelola penerimaan uang dari pelanggan.
+                </p>
+            </div>
+
+            <div class="org-card reveal">
+                <div class="org-icon">📋</div>
+                <h3>PURCHASING</h3>
+                <p>
+                    Bertanggung jawab melakukan pembelian barang,
+                    berkoordinasi dengan pemasok, serta memenuhi
+                    kebutuhan persediaan toko.
+                </p>
+            </div>
+
+            <div class="org-card reveal">
+                <div class="org-icon">📦</div>
+                <h3>WAREHOUSE</h3>
+                <p>
+                    Bertanggung jawab mengelola penyimpanan barang,
+                    memeriksa stok, serta mengatur keluar masuk
+                    persediaan produk.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- KATALOG PRODUK -->
+
+<section class="catalog" id="katalog">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span>PRODUK KAMI</span>
+            <h2>Katalog Produk</h2>
+            <p>
+                Temukan berbagai produk cat dan perlengkapan
+                pengecatan untuk memenuhi kebutuhan Anda.
+            </p>
+        </div>
+
+        <div class="category-tabs reveal">
+
+            <button class="category-btn active" data-category="cat">
+                Cat Tembok
+            </button>
+
+            <button class="category-btn" data-category="alat">
+                Peralatan Cat
+            </button>
+
+        </div>
+
+        <!-- PRODUK CAT TEMBOK -->
+
+        <div class="product-grid" id="catProducts">
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/cat tembok DURATEX 1K-PU.jpeg"
+                         alt="Cat Duratex 1K-PU">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">CAT TEMBOK</span>
+                    <h3>DURATEX 1K-PU</h3>
+                    <p>
+                        DRX-870 WB. Cat tembok eksterior
+                        water-based ultra premium maintenance free.
+                    </p>
+                    <button class="detail-btn" data-product="duratex">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/DECORFLEX-DF-97-01 cat.webp"
+                         alt="Cat Decorflex">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">CAT TEMBOK</span>
+                    <h3>DECORFLEX</h3>
+                    <p>
+                        DF-97. Cat tembok eksterior
+                        premium elastomerik.
+                    </p>
+                    <button class="detail-btn" data-product="decorflex">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/DECOR ACRYLIC ENAMEL.jpeg"
+                         alt="Decor Acrylic Enamel">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">CAT TEMBOK</span>
+                    <h3>DECOR ACRYLIC ENAMEL</h3>
+                    <p>
+                        DAE-560 WB. Cat gloss premium
+                        water-based yang mudah dibersihkan.
+                    </p>
+                    <button class="detail-btn" data-product="acrylic">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PRODUK PERALATAN CAT -->
+
+        <div class="product-grid" id="toolProducts" style="display:none;">
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/kuas.webp" alt="Kuas Cat">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">PERALATAN CAT</span>
+                    <h3>Kuas Cat</h3>
+                    <p>
+                        Peralatan untuk mengaplikasikan cat
+                        pada permukaan dengan hasil yang rapi.
+                    </p>
+                    <button class="detail-btn" data-product="kuas">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/roller cat.jpg" alt="Roller Cat">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">PERALATAN CAT</span>
+                    <h3>Roller Cat</h3>
+                    <p>
+                        Alat pengecatan untuk membantu
+                        mengaplikasikan cat pada bidang luas.
+                    </p>
+                    <button class="detail-btn" data-product="roller">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/bak cat.jpeg" alt="Bak Cat">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">PERALATAN CAT</span>
+                    <h3>Bak Cat</h3>
+                    <p>
+                        Wadah untuk menampung cat dan
+                        membantu penggunaan roller.
+                    </p>
+                    <button class="detail-btn" data-product="bak">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/amplas cat.jpeg" alt="Amplas">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">PERALATAN CAT</span>
+                    <h3>Amplas</h3>
+                    <p>
+                        Digunakan untuk menghaluskan
+                        permukaan sebelum pengecatan.
+                    </p>
+                    <button class="detail-btn" data-product="amplas">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="product-image">
+                    <img src="assets/img/dempul cat.jpeg" alt="Dempul">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-type">PERALATAN CAT</span>
+                    <h3>Dempul</h3>
+                    <p>
+                        Material untuk membantu meratakan
+                        permukaan sebelum pengecatan.
+                    </p>
+                    <button class="detail-btn" data-product="dempul">
+                        Selengkapnya →
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- POPUP PRODUK -->
+
+<div class="modal" id="productModal">
+    <div class="modal-content">
+
+        <button class="modal-close" id="modalClose">
+            &times;
+        </button>
+
+        <span class="product-type">INFORMASI PRODUK</span>
+
+        <h2 id="modalTitle"></h2>
+        <p id="modalCode"></p>
+        <p id="modalDescription"></p>
+
+        <h4>Spesifikasi dan Keunggulan</h4>
+        <ul id="modalFeatures"></ul>
+
+    </div>
+</div>
+
+<!-- LOKASI DAN MAPS -->
+
+<section class="location" id="lokasi">
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <span>TEMUKAN TOKO KAMI</span>
+            <h2>Lokasi Kios Cat Polos Warna 9</h2>
+            <p>
+                Kunjungi toko kami secara langsung untuk
+                mendapatkan produk dan kebutuhan pengecatan Anda.
+            </p>
+        </div>
+
+        <div class="location-grid reveal">
+
+            <div class="location-info">
+
+                <h3>Lokasi Toko</h3>
+
+                <p>
+                    Kami hadir untuk membantu memenuhi
+                    kebutuhan cat dan perlengkapan pengecatan Anda.
+                    Silakan kunjungi lokasi toko melalui peta
+                    yang tersedia.
+                </p>
+
+                <div class="address">
+                    <strong>📍 Alamat Toko</strong>
+                    <p>
+                        Jalan Ring Road Utara, Nanggulan,
+                        Maguwoharjo, Depok, Sleman,
+                        Daerah Istimewa Yogyakarta.
+                    </p>
+                </div>
+
+                <a href="https://maps.app.goo.gl/EHFVJjUUhDEssdpN6"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="map-button">
+                    Buka Google Maps →
+                </a>
+
+            </div>
+
+            <div>
+                <iframe
+                    class="map-frame"
+                    title="Peta Kios Oplos 9"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.5082712279263!2d110.42791847476579!3d-7.778733692240935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5a1e9079a3bd%3A0x66ef3871e2aa1bda!2sKios%20Oplos%209!5e1!3m2!1sid!2sid!4v1795199416649!5m2!1sid!2sid"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- KONTAK WHATSAPP -->
+
+<section class="contact" id="kontak">
+    <div class="container contact-inner reveal">
+
+        <div>
+            <h2>Butuh Informasi Produk?</h2>
+
+            <p>
+                Hubungi Kios Cat Polos Warna 9 melalui WhatsApp
+                untuk mendapatkan informasi produk, ketersediaan
+                barang, dan kebutuhan pengecatan Anda.
+            </p>
+        </div>
+
+        <a href="#" id="whatsappButton"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="wa-button">
+            ☎ Hubungi via WhatsApp
+        </a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>Kios Cat Polos Warna 9</h3>
+                <p>
+                    Mitra kebutuhan cat dan perlengkapan pengecatan
+                    Anda. Menghadirkan pilihan produk untuk membantu
+                    mewujudkan warna terbaik bagi setiap hunian.
+                </p>
+            </div>
+
+            <div>
+                <h3>Navigasi</h3>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#profil">Profil UMKM</a></li>
+                    <li><a href="#sejarah">Sejarah</a></li>
+                    <li><a href="#visi-misi">Visi & Misi</a></li>
+                    <li><a href="#manajemen">Manajemen</a></li>
+                    <li><a href="#katalog">Katalog Produk</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Informasi</h3>
+                <ul>
+                    <li><a href="#lokasi">Lokasi Toko</a></li>
+                    <li><a href="#kontak">Hubungi Kami</a></li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/EHFVJjUUhDEssdpN6"
+                           target="_blank">
+                            Google Maps
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p style="text-align:center;">
+                © 2026 Kios Cat Polos Warna 9.
+                Seluruh Hak Cipta Dilindungi.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* WHATSAPP DENGAN TEMPLATE PESAN */
+
+const nomorWhatsApp = "6285604501550";
+
+const templatePesan =
+    "Halo Kios Cat Polos Warna 9! 👋\n\n" +
+    "Saya ingin bertanya mengenai produk cat dan perlengkapan pengecatan yang tersedia.\n\n" +
+    "Boleh saya mendapatkan informasi lebih lanjut mengenai produk, harga, dan ketersediaan barang?\n\n" +
+    "Terima kasih.";
+
+const whatsappURL =
+    "https://wa.me/" + nomorWhatsApp +
+    "?text=" + encodeURIComponent(templatePesan);
+
+document.getElementById("whatsappButton").href = whatsappURL;
+
+
+/* NAVIGASI MOBILE */
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function() {
+
+    navLinks.classList.toggle("show");
+
+    menuToggle.textContent =
+        navLinks.classList.contains("show") ? "✕" : "☰";
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("show");
+        menuToggle.textContent = "☰";
+
+    });
+
+});
+
+
+/* EFEK HEADER SAAT SCROLL */
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", function() {
+
+    header.classList.toggle("scrolled", window.scrollY > 30);
+
+}, { passive: true });
+
+
+/* ANIMASI SCROLL */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries, obs) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting) {
+
+            entry.target.classList.add("active");
+            obs.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.12
+});
+
+revealElements.forEach(element => {
+    observer.observe(element);
+});
+
+
+/* FILTER KATEGORI PRODUK */
+
+const categoryButtons = document.querySelectorAll(".category-btn");
+
+const catProducts = document.getElementById("catProducts");
+const toolProducts = document.getElementById("toolProducts");
+
+categoryButtons.forEach(button => {
+
+    button.addEventListener("click", function() {
+
+        categoryButtons.forEach(item => {
+            item.classList.remove("active");
+        });
+
+        this.classList.add("active");
+
+        const category = this.dataset.category;
+
+        if(category === "cat") {
+
+            catProducts.style.display = "grid";
+            toolProducts.style.display = "none";
+
+        } else {
+
+            catProducts.style.display = "none";
+            toolProducts.style.display = "grid";
+
+        }
+
+        const visibleCards = category === "cat"
+            ? catProducts.querySelectorAll(".product-card")
+            : toolProducts.querySelectorAll(".product-card");
+
+        visibleCards.forEach((card, index) => {
+
+            card.classList.remove("active");
+            card.style.animation = "none";
+
+            void card.offsetWidth;
+
+            card.style.animation =
+                `fadeUp .55s ease ${index * .09}s both`;
+
+        });
+
+    });
+
+});
+
+
+/* DATA DETAIL PRODUK */
+
+const products = {
+
+    duratex: {
+        title: "DURATEX 1K-PU",
+        code: "DRX-870 WB",
+        description: "Cat tembok eksterior water-based ultra premium maintenance free.",
+        features: [
+            "Maintenance Free",
+            "Long Lasting Color",
+            "Ramah lingkungan"
+        ]
+    },
+
+    decorflex: {
+        title: "DECORFLEX",
+        code: "DF-97",
+        description: "Cat tembok eksterior premium elastomerik.",
+        features: [
+            "Menutup retak rambut",
+            "Tidak mudah kotor",
+            "Rainproof"
+        ]
+    },
+
+    acrylic: {
+        title: "DECOR ACRYLIC ENAMEL",
+        code: "DAE-560 WB",
+        description: "Cat gloss premium water-based yang mudah dibersihkan.",
+        features: [
+            "Tampilan gloss",
+            "Tahan gores",
+            "Tahan cuaca"
+        ]
+    },
+
+    kuas: {
+        title: "Kuas Cat",
+        code: "Peralatan pengecatan",
+        description: "Kuas digunakan untuk mengaplikasikan cat pada permukaan, terutama bagian sudut, tepian, dan area yang sulit dijangkau roller.",
+        features: [
+            "Tersedia berbagai ukuran",
+            "Membantu pengecatan lebih detail",
+            "Untuk berbagai kebutuhan pengecatan"
+        ]
+    },
+
+    roller: {
+        title: "Roller Cat",
+        code: "Peralatan pengecatan",
+        description: "Roller digunakan untuk mengaplikasikan cat pada permukaan luas seperti dinding dan plafon.",
+        features: [
+            "Mempercepat proses pengecatan",
+            "Cocok untuk permukaan luas",
+            "Membantu menghasilkan lapisan cat merata"
+        ]
+    },
+
+    bak: {
+        title: "Bak Cat",
+        code: "Wadah pengecatan",
+        description: "Bak cat digunakan untuk menampung cat serta membantu mengatur jumlah cat pada roller sebelum diaplikasikan ke permukaan.",
+        features: [
+            "Memudahkan penggunaan roller",
+            "Membantu mengatur jumlah cat",
+            "Praktis digunakan"
+        ]
+    },
+
+    amplas: {
+        title: "Amplas",
+        code: "Peralatan persiapan permukaan",
+        description: "Amplas digunakan untuk menghaluskan permukaan, menghilangkan bagian yang kasar, dan membantu persiapan sebelum pengecatan.",
+        features: [
+            "Membantu menghaluskan permukaan",
+            "Tersedia berbagai tingkat kekasaran",
+            "Untuk persiapan pengecatan"
+        ]
+    },
+
+    dempul: {
+        title: "Dempul",
+        code: "Material persiapan permukaan",
+        description: "Dempul digunakan untuk mengisi bagian permukaan yang berlubang atau tidak rata agar lebih siap sebelum proses pengecatan.",
+        features: [
+            "Membantu menutup lubang kecil",
+            "Meratakan permukaan",
+            "Mendukung hasil pengecatan lebih rapi"
+        ]
+    }
+
+};
+
+
+/* POPUP PRODUK */
+
+const modal = document.getElementById("productModal");
+
+const modalTitle = document.getElementById("modalTitle");
+const modalCode = document.getElementById("modalCode");
+const modalDescription = document.getElementById("modalDescription");
+const modalFeatures = document.getElementById("modalFeatures");
+
+document.querySelectorAll(".detail-btn").forEach(button => {
+
+    button.addEventListener("click", function() {
+
+        const product = products[this.dataset.product];
+
+        if(!product) return;
+
+        modalTitle.textContent = product.title;
+        modalCode.textContent = product.code;
+        modalDescription.textContent = product.description;
+
+        modalFeatures.innerHTML = "";
+
+        product.features.forEach(feature => {
+
+            const li = document.createElement("li");
+            li.textContent = feature;
+
+            modalFeatures.appendChild(li);
+
+        });
+
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+
+    });
+
+});
+
+
+/* TUTUP POPUP */
+
+function closeModal() {
+
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+
+}
+
+document.getElementById("modalClose").addEventListener("click", closeModal);
+
+modal.addEventListener("click", function(event) {
+
+    if(event.target === modal) {
+        closeModal();
+    }
+
+});
+
+document.addEventListener("keydown", function(event) {
+
+    if(event.key === "Escape") {
+        closeModal();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
